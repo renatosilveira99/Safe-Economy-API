@@ -1,1 +1,1 @@
-API RESTFUL desenvolvida em AdonisJS para a disciplina de Engenharia de Software, basicamente a ideia é criar um aplicativo onde o usuário possa inserir saldo, cadastrar suas contas a pagar e fazer o pagamento de contas controlando seu saldo atual.
+API RESTFUL desenvolvida em AdonisJS para a disciplina de Engenharia de Software, basicamente a ideia é criar um aplicativo onde o usuário possa inserir saldo, cadastrar suas contas a pagar e fazer o pagamento de contas controlando seu saldo atual. Resumindo seria um crud com cadastro e autenticação de usuário
