@@ -18,7 +18,12 @@ const Route = use('Route');
 
 Route.post('/register', 'AuthController.register');
 Route.post('/authenticate', 'AuthController.authenticate');
+Route.patch('/atualizaSaldo/:id', 'AuthController.atualizaSaldo');
 
 Route.group(() => {
   Route.resource('contas', 'ContaController').apiOnly().except("update");
 }).middleware("auth");
+
+Route.get('/retornaContas/:id', 'ContaController.retornaContas');
+
+Route.get('/usuarios', 'AuthController.usuarios');

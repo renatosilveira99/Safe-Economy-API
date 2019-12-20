@@ -1,6 +1,7 @@
 "use strict";
 
 const Conta = use("App/Models/Conta");
+const Database = use('Database');
 
 /**
  * Resourceful controller for interacting with Contas
@@ -15,6 +16,11 @@ class ContaController {
     .with('user')
     .fetch();
 
+    return contas;
+  }
+
+  async retornaContas({params, response}){
+    const contas = await Database.from('contas').where('user_id', params.id)
     return contas;
   }
 
